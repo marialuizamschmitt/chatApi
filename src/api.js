@@ -12,7 +12,7 @@ app.use('/', router.get('/', (req, res, next) => {
 
 app.use('/', router.get('/sobre', (req, res, next) => {
     res.status(200).send({
-        "nome" : "FARCHAT",
+        "nome" : "CHAT",
         "autor" : "Maria Luiza Schmitt",
         "versao" : "0.1.0"
     });
