@@ -64,4 +64,3 @@ app.use("/sala/listar", router.get("/sala/listar", async (req, res) => {
     res.status(200).send(resp);
 }))
 module.exports = app;
-export default app;
