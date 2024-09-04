@@ -10,7 +10,7 @@ app.use('/', router.get('/', (req, res, next) => {
     res.status(200).send(`
         <html>
           <head>
-            <title>Ludemo API</title>
+            
             <style>
               body {
                 background-color: black;
