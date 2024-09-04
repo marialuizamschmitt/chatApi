@@ -7,7 +7,32 @@ app.use(express.json());
 const router = express.Router();
 
 app.use('/', router.get('/', (req, res, next) => {
-    res.status(200).send("<h1>API-CHAT</h1>");
+    res.status(200).send(`
+        <html>
+          <head>
+            <title>Ludemo API</title>
+            <style>
+              body {
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-family: Arial, sans-serif;
+              }
+              h1 {
+                margin-top: 100px;
+                font-size: 36px;
+              }
+              p {
+                margin-top: 20px;
+                font-size: 18px;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>API chat.</h1>
+          </body>
+        </html>
+    `);
 }));
 
 app.use('/', router.get('/sobre', (req, res, next) => {
