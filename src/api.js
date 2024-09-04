@@ -20,7 +20,7 @@ app.use('/', router.get('/', (req, res, next) => {
               }
               h1 {
                 margin-top: 100px;
-                font-size: 36px;
+                font-size: 37px;
               }
               p {
                 margin-top: 20px;
